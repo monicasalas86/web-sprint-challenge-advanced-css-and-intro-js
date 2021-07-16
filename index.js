@@ -246,17 +246,17 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 
-// const century20 = [];
+const century20 = [];
 
 function get20s(array) { 
-  // for(let i = 0; i < artists.length; i++){
-  //   if(artists[i].years = artists[i].years.split("19") ){
-  //     century20.push(artists[i].name);
-  //   }
-  // }
-  // return century20;
+  for(let i = 0; i < artists.length; i++){
+    if(artists[i].years = artists[i].years.split(" ") && artists[i].years.includes("19") && artists[i].years.includes("19")){
+      century20.push(artists[i].name);
+    }
+  }
+  return century20;
 }
-// console.log('task 4', get20s(century20));
+console.log('task 4', get20s(century20));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -292,9 +292,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  array.push({ 
+    "id": 20,
+    "name": "Monica Salas", 
+    "years": "1994 -",
+    "genre": "Web Design", 
+    "nationality": "Mexican-American",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  })
+  return array
 }
+
+console.log('task 6', addArtist(artists));
 
 
 
